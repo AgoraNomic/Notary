@@ -14,6 +14,10 @@ DURATION_PARTS = {
 %>
 NOTARY'S REPORT OF <%= Time.now.strftime('%^B %d %Y') %>
 
+An up-to-date version of this report is available online at
+https://agoranomic.org/Notary/.
+
+
 <% if contracts.length == 1 %>There is one non-invisible contract.<% else %>There are <%= contracts.length %> non-invisible contracts.<% end %>
 <% contracts.each do |contract| %>
 =============================== CONTRACT ===============================
