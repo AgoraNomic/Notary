@@ -14,6 +14,9 @@ DURATION_PARTS = {
     days: 'dy'
 }
 
+def render_time(time)
+  return "<time datetime=\"#{ time.strftime('%FT%T%:z') }\">#{ time.utc.strftime('%b %d %Y %H:%M') } UTC</time>"
+end
 %>
 <!doctype html>
 <html>
@@ -47,7 +50,13 @@ DURATION_PARTS = {
   <body>
     <h1>Office of the Notary of Agora Nomic</h1>
     <p><a href="report.txt">Text Report</a></p>
-    <p>Last updated <%= Time.now.strftime('%B %d, %Y') %>.</p>
+    <p>Last updated <%= render_time(Time.now) %>.</p>
+
+    <p>
+      Display times in:
+      <label><input type="radio" id="time-utc" name="displayTimes" value="huey"> UTC</label>
+      <label><input type="radio" id="time-local" name="displayTimes" value="huey" checked> Your Local Time</label>
+    </p>
 
     <div id="contracts">
       <h2>Contracts</h2>
@@ -91,9 +100,9 @@ DURATION_PARTS = {
             <span class="pledge-by"><%= pledge['by'] %></span>
           </h3>
           <div class="pledge-meta">
-            <span><strong>Made:</strong> <%= pledge['date'].utc.strftime('%b %d %Y %H:%M') %></span>
+            <span><strong>Made:</strong> <%= render_time(pledge['date']) %></span>
             <span><strong>Window:</strong> <%= window_str %></span>
-            <span><strong>Expires:</strong> <%= (pledge['date'].utc + window).strftime('%b %d %Y %H:%M') %></span>
+            <span><strong>Expires:</strong> <%= render_time(pledge['date'].utc + window) %></span>
             <span><strong>N:</strong> <%= pledge['n'] || 2 %></span>
           </div>
           <%= markdown.render(pledge['text'].strip) %>
@@ -106,5 +115,34 @@ DURATION_PARTS = {
     point, any invisible contracts or pledges (i.e. those not listed above)
     will be destroyed.
     </p>
+    <script>
+      let utc = false
+      function updateDates() {
+        const dates = document.querySelectorAll('time')
+        dates.forEach(el => {
+          el.textContent = new Date(el.dateTime).toLocaleString(undefined, {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            timeZoneName: "short",
+            timeZone: utc ? "UTC" : undefined
+          })
+        })
+      }
+      
+      updateDates()
+
+      document.getElementById('time-local').onclick = () => {
+        utc = false
+        updateDates()
+      }
+
+      document.getElementById('time-utc').onclick = () => {
+        utc = true
+        updateDates()
+      }
+    </script>
   </body>
 </html>
