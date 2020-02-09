@@ -1,0 +1,42 @@
+<%
+require 'yaml'
+require 'active_support/all'
+
+pledges = YAML.load_file('pledges.yml').sort_by { |x| x['date'] }
+contracts = Dir['contracts/*.yml'].map { |f| YAML.load_file(f) }
+
+DURATION_PARTS = {
+    years: 'yr',
+    months: 'mo',
+    days: 'dy'
+}
+
+%>
+NOTARY'S REPORT OF <%= Time.now.strftime('%^B %d %Y') %>
+
+<% if contracts.length == 1 %>There is one non-invisible contract.<% else %>There are <%= contracts.length %> non-invisible contracts.<% end %>
+<% contracts.each do |contract| %>
+=============================== CONTRACT ===============================
+|<%= contract['title'].ljust(70, ' ') %>|
+|PARTIES: <%= contract['parties'].join(', ').ljust(61, ' ') %>|
+========================================================================
+<%= contract['text']
+%>========================================================================
+<% end %>
+<% if pledges.length == 1 %>There is one non-invisible pledge.<% else %>There are <%= pledges.length %> non-invisible pledges.<% end %>
+<%
+pledges.each do |pledge|
+  window = pledge['window'] ? ActiveSupport::Duration.parse("P" + pledge['window']) : 60.days
+  window_str = window.parts.map { |type, value| "#{value}#{DURATION_PARTS[type]}" }.join(', ')
+%>
+================================ PLEDGE ================================
+|<%= pledge['title'].ljust(70 - pledge['by'].length, ' ') %><%= pledge['by'] %>|
+|MADE: <%= pledge['date'].utc.strftime('%b %d %Y %H:%M') %>|WINDOW: <%= window_str.rjust(5, ' ') %>|EXPIRES: <%= (pledge['date'].utc + window).strftime('%b %d %Y %H:%M') %>|N: <%= (pledge['n'] || 2).to_s.rjust(2, ' ')%>|
+========================================================================
+<%= pledge['text']
+%>========================================================================
+<% end %>
+
+The transitional period can end on or after April 27, 2020. At that
+point, any invisible contracts or pledges (i.e. those not listed above)
+will be destroyed.

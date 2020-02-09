@@ -1,0 +1,12 @@
+title: CuddleBeam Has No Friends
+parties:
+  - CuddleBeam
+text: |
+  Any Party of this Contract can act on behalf of any other Party to this
+  Contract.
+
+  This Contract can have up to 2 Parties, known as Party 1 and Party 2.
+  Upon Creation, Cuddlebeam occupies Party 1.
+
+  Cuddlebeam can become a Party of this Contract by announcement and
+  specifying the Party they are occupying (either Party 1 or Party 2).
