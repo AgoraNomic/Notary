@@ -1,0 +1,110 @@
+<%
+require 'yaml'
+require 'active_support/all'
+require 'redcarpet'
+
+markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+
+pledges = YAML.load_file('pledges.yml').sort_by { |x| x['date'] }
+contracts = Dir['contracts/*.yml'].map { |f| YAML.load_file(f) }
+
+DURATION_PARTS = {
+    years: 'yr',
+    months: 'mo',
+    days: 'dy'
+}
+
+%>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+    body {
+      max-width: 50em;
+      margin: auto;
+    }
+    .agreement {
+      border: 1px solid black;
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+    .agreement :last-child {
+      margin-bottom: 0;
+    }
+    .pledge-by {
+      float: right;
+    }
+    .pledge-meta {
+      display: flex;
+      justify-content: space-between;
+    }
+    h3 {
+      margin: 0;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Office of the Notary of Agora Nomic</h1>
+    <p><a href="report.txt">Text Report</a></p>
+    <p>Last updated <%= Time.now.strftime('%B %d, %Y') %>.</p>
+
+    <div id="contracts">
+      <h2>Contracts</h2>
+      <p>
+        <% if contracts.length == 1 %>
+          There is one non-invisible contract.
+        <% else %>
+          There are <%= contracts.length %> non-invisible contracts.
+        <% end %>
+      </p>
+
+      <% contracts.each do |contract| %>
+        <div class='agreement contract'>
+          <h3><%= contract['title'] %></h3>
+          <div id='contract-parties'><%= contract['parties'].join(', ') %></div>
+          <%= markdown.render(contract['text'].strip) %>
+        </div>
+      <% end %>
+    </div>
+
+    <div id="pledges">
+      <h2>Pledges</h2>
+      <p>
+        <% if pledges.length == 1 %>
+          There is one non-invisible pledge.
+        <% else %>
+          There are <%= pledges.length %> non-invisible pledges.
+        <% end %>
+      <% pledges.each do |pledge|
+        window = pledge['window'] ? ActiveSupport::Duration.parse("P" + pledge['window']) : 60.days
+        window_str = window.parts.map { |type, value| "#{value}#{DURATION_PARTS[type]}" }.join(', ')
+        expire = pledge['date'].utc + window
+        if expire < Time.now
+          puts "pledges.yml contains expired pledge: #{pledge['title']}"
+          exit 1
+        end
+        %>
+        <div class="agreement pledge">
+          <h3>
+            <%= pledge['title'] %>
+            <span class="pledge-by"><%= pledge['by'] %></span>
+          </h3>
+          <div class="pledge-meta">
+            <span><strong>Made:</strong> <%= pledge['date'].utc.strftime('%b %d %Y %H:%M') %></span>
+            <span><strong>Window:</strong> <%= window_str %></span>
+            <span><strong>Expires:</strong> <%= (pledge['date'].utc + window).strftime('%b %d %Y %H:%M') %></span>
+            <span><strong>N:</strong> <%= pledge['n'] || 2 %></span>
+          </div>
+          <%= markdown.render(pledge['text'].strip) %>
+        </div>
+      <% end %>
+    </div>
+
+    <p>
+    The transitional period can end on or after April 27, 2020. At that
+    point, any invisible contracts or pledges (i.e. those not listed above)
+    will be destroyed.
+    </p>
+  </body>
+</html>
