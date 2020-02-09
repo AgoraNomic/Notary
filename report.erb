@@ -28,6 +28,11 @@ NOTARY'S REPORT OF <%= Time.now.strftime('%^B %d %Y') %>
 pledges.each do |pledge|
   window = pledge['window'] ? ActiveSupport::Duration.parse("P" + pledge['window']) : 60.days
   window_str = window.parts.map { |type, value| "#{value}#{DURATION_PARTS[type]}" }.join(', ')
+  expire = pledge['date'].utc + window
+  if expire < Time.now
+    puts "pledges.yml contains expired pledge: #{pledge['title']}"
+    exit 1
+  end
 %>
 ================================ PLEDGE ================================
 |<%= pledge['title'].ljust(70 - pledge['by'].length, ' ') %><%= pledge['by'] %>|
