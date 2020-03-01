@@ -1,6 +1,7 @@
 <%
 require 'yaml'
 require 'active_support/all'
+require 'unicode/display_width'
 
 pledges = YAML.load_file('pledges.yml').sort_by { |x| x['date'] }
 contracts = Dir['contracts/*.yml'].map { |f| YAML.load_file(f) }
@@ -11,6 +12,11 @@ DURATION_PARTS = {
     days: 'dy'
 }
 
+def pad(str, total_width)
+  str_width = Unicode::DisplayWidth.of(str, emoji: true)
+
+  str + (" " * (total_width - str_width))
+end
 %>
 NOTARY'S REPORT OF <%= Time.now.strftime('%^B %d %Y') %>
 
@@ -21,8 +27,8 @@ https://agoranomic.org/Notary/.
 <% if contracts.length == 1 %>There is one non-invisible contract.<% else %>There are <%= contracts.length %> non-invisible contracts.<% end %>
 <% contracts.each do |contract| %>
 =============================== CONTRACT ===============================
-|<%= contract['title'].ljust(70, ' ') %>|
-|PARTIES: <%= contract['parties'].join(', ').ljust(61, ' ') %>|
+|<%= pad(contract['title'], 70) %>|
+|PARTIES: <%= pad(contract['parties'].join(', '), 61) %>|
 ========================================================================
 <%= contract['text']
 %>========================================================================
@@ -39,12 +45,13 @@ pledges.each do |pledge|
   end
 %>
 ================================ PLEDGE ================================
-|<%= pledge['title'].ljust(70 - pledge['by'].length, ' ') %><%= pledge['by'] %>|
+|<%= pad(pledge['title'], 70 - pledge['by'].length) %><%= pledge['by'] %>|
 |MADE: <%= pledge['date'].utc.strftime('%b %d %Y %H:%M') %>|WINDOW: <%= window_str.rjust(5, ' ') %>|EXPIRES: <%= (pledge['date'].utc + window).strftime('%b %d %Y %H:%M') %>|N: <%= (pledge['n'] || 2).to_s.rjust(2, ' ')%>|
 ========================================================================
 <%= pledge['text']
 %>========================================================================
 <% end %>
+*G = one googleplex
 
 The transitional period can end on or after April 27, 2020. At that
 point, any invisible contracts or pledges (i.e. those not listed above)
