@@ -1,0 +1,121 @@
+title: The Dragon Corporation
+parties:
+  - Warrigal
+text: |
+  ## Bylaw 1: Definition
+
+  This contract is named "the Dragon Corporation". The purpose of the
+  Dragon Corporation is to earn as much money as possible for its
+  shareholders.
+
+  All other provisions of this contract notwithstanding, this contract
+  does not permit any entity to act on behalf of any other entity.
+
+  Shares of Dragon stock (also known as "shares of DRGN", or, in this
+  contract, "shares") are a currency whose purpose is to represent
+  ownership of the Dragon Corporation. An entity which owns at least one
+  share is known as a shareholder.
+
+  If, at any time, the Dragon Corporation or the Lost and Found Department
+  owns any shares, then those shares are destroyed.
+
+  Any person CAN, by announcement, become a party to this contract or
+  cease to be a party to this contract. A shareholder who is a party to
+  this contract is known as a member.
+
+  Wherever this contract states that an entity becomes a party to this
+  contract or ceases to be a party to this contract, all parties to this
+  contract are considered to consent to this change.
+
+  ## Bylaw 2: Proposals
+
+  Any member CAN, by announcement, submit a Corporate Proposal. A
+  Corporate Proposal must have exactly one of the types defined by this
+  contract. Thereafter, any member CAN vote FOR or AGAINST that proposal
+  by announcement, or retract such a vote, which causes the vote to become
+  null and void. Whenever a member votes, all of eir previous votes on the
+  same proposal are implicitly retracted.
+
+  If a Corporate Proposal was submitted more than 7 but fewer than 21 days
+  ago, and the proposal has approval (as defined in other bylaws), and the
+  proposal has not been applied, then any member CAN, by announcement,
+  apply the proposal, which has effects as defined in other bylaws.
+
+  Members SHALL NOT submit, vote for, or apply proposals that are
+  egregiously unfair to other shareholders (such as a proposal which takes
+  or revokes shares from minority shareholders without just compensation).
+
+  ## Bylaw 3: Amendment Proposals
+
+  An Amendment Proposal is a type of Corporate Proposal. An Amendment
+  Proposal has approval if at least one member has voted FOR it, and the
+  number of shares owned by members who have voted FOR it is at least 2
+  times the number of shares owned by members who have voted AGAINST it.
+
+  When an Amendment Proposal is applied, the following occur:
+
+  1. Each party to this contract who has not consented to the application
+  of the proposal ceases to be a party to this contract. A party who has
+  voted FOR a proposal consents to the application of that proposal,
+  unless e has publicly stated otherwise at or after the time at which e
+  voted FOR it.
+
+  2. This contract is modified as described in the proposal.
+
+  However, the application of an Amendment Proposal is INEFFECTIVE unless,
+  in the same message, the entity who applies the proposal also publishes
+  a text which is labeled as being the text of this contract after the
+  application. E SHOULD, at that point, publish intent to ratify that text
+  without objection.
+
+  ## Bylaw 4: Ordinary Proposals
+
+  An Ordinary Proposal is a type of Corporate Proposal. An Ordinary
+  Proposal has approval if the number of shares owned by members voting
+  FOR it is greater than the number of shares owned by members voting
+  AGAINST it.
+
+  When an Ordinary Proposal is applied, assets are created, destroyed,
+  and/or transferred as described in the proposal; and entities may
+  create, destroy, and/or transfer assets as permitted in the proposal.
+  Such permission expires 30 days after the proposal is applied.
+
+  After an Ordinary Proposal is applied, the person who applied it SHOULD
+  publish a description of its effects in a timely fashion, including all
+  balances of assets defined by this contract which were affected by the
+  proposal.
+
+  ## Bylaw 5: Bonds and Banknotes
+
+  Perpetual Dragon bonds (hereinafter "bonds") are a currency. Banknotes
+  are a currency.
+
+  At the beginning of each Agoran quarter, each entity is awarded a number
+  of banknotes equal to the number of bonds that e owns.
+
+  If an entity owns a banknote, e CAN redeem the banknote by transferring
+  1 coin from the Dragon Corporation to emself; the banknote is then
+  destroyed.
+
+  ## Bylaw 6: Recordkeeping
+
+  If a party to this contract owns more shares than any other party to
+  this contract, then that party becomes the President of the Dragon
+  Corporation, if e is not already the President. The former President
+  SHALL publicly inform the new President of this event in a timely
+  fashion.
+
+  The President is the recordkeepor of all assets defined by this
+  contract, except those for which this contract specifies a different
+  recordkeepor.
+
+  ## Bylaw 7: IPO
+
+  Within 90 days after this contract is created, any entity CAN buy a
+  share by announcement; in the same message, the entity must transfer 10
+  coins and/or banknotes to the Dragon Corporation as a cost for this
+  action. When e does this, e is awarded 1 share.
+
+  Within 90 days after this contract is created, any entity who owns at
+  least 1 share may sell the share by announcement. When e does this, the
+  share is destroyed and e is awarded 5 banknotes.
