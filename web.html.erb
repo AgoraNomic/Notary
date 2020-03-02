@@ -11,7 +11,9 @@ contracts = Dir['contracts/*.yml'].map { |f| YAML.load_file(f) }
 DURATION_PARTS = {
     years: 'yr',
     months: 'mo',
-    days: 'dy'
+    days: 'dy',
+    hours: 'hr',
+    minutes: 'mn'
 }
 
 def render_time(time)
@@ -87,7 +89,7 @@ end
         <% end %>
       <% pledges.each do |pledge|
         window = pledge['window'] ? ActiveSupport::Duration.parse("P" + pledge['window']) : 60.days
-        window_str = window.parts.map { |type, value| "#{value}#{DURATION_PARTS[type]}" }.join(', ')
+        window_str = window.parts.map { |type, value| "#{value}#{DURATION_PARTS[type]}" }.join(' ')
         expire = pledge['date'].utc + window
         if expire < Time.now
           puts "pledges.yml contains expired pledge: #{pledge['title']}"
