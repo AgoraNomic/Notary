@@ -17,7 +17,7 @@ jobs:
       - name: Build text report
         run: |
           mkdir out
-          bundle exec ruby report.erb > out/report.txt
+          bundle exec ruby report.rb > out/report.txt
       - name: Build HTML report
         run: bundle exec erb web.html.erb > out/index.html
       - name: Deploy
