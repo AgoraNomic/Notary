@@ -75,6 +75,35 @@ end
           <h3><%= contract['title'] %></h3>
           <div id='contract-parties'><%= contract['parties'].join(', ') %></div>
           <%= markdown.render(contract['text'].strip) %>
+          <hr>
+          <% if contract['assets'] %>
+            <h4>Asset ownership (self-ratifying if I am the recordkeepor)</h4>
+            <%= markdown.render(contract['assets']) %>
+          <% end %>
+
+          <% if contract['notes'] %>
+            <h4>Notes</h4>
+            <%= markdown.render(contract['notes'] )%>
+          <% end %>
+
+          <% if contract['history'] %>
+            <h4>History</h4>
+            <% rev = 0 %>
+            <ul>
+              <% contract['history'].each do |event| %>
+                <%
+                  if event['event'].include? '($)'
+                    rev += 1
+                    event['event'].gsub!('($)', "(#{rev})")
+                  end
+                %>
+                <li>
+                  <%= render_time(event['date']) %>:
+                  <%= event['event'] %>
+                </li>
+              <% end %>
+            </ul>
+          <% end %>
         </div>
       <% end %>
     </div>

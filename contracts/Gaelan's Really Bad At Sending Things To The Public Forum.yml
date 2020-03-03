@@ -3,7 +3,7 @@ parties:
   - Gaelan
   - twg
   - Warrigal
-  - Falsifan
+  - Falsifian
 text: |
   Any person may become a party of this contract to act on Gaelan’s behalf
   as described below.
@@ -21,3 +21,10 @@ text: |
     the message to the discussion forum
 
   Gaelan may terminate this contract at any time, by announcement.
+history:
+  - date: 2020-01-08 08:38:00.00 -8
+    event: twg created (see CFJ 3791)
+  - date: 2020-01-23 17:58:00.00 -8
+    event: Warrigal joined
+  - date: 2020-02-29 22:11:00.00 -8
+    event: Falsifian joined

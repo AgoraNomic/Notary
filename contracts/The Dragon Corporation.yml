@@ -111,11 +111,28 @@ text: |
 
   ## Bylaw 7: IPO
 
-  Within 90 days after this contract is created, any entity CAN buy a
-  share by announcement; in the same message, the entity must transfer 10
-  coins and/or banknotes to the Dragon Corporation as a cost for this
-  action. When e does this, e is awarded 1 share.
+  Within 90 days after this contract is created, any entity CAN pay a
+  fee of 10 coins or 10 banknotes to the Dragon Corporation to buy a
+  share. When e does this, e is awarded 1 share.
 
   Within 90 days after this contract is created, any entity who owns at
   least 1 share may sell the share by announcement. When e does this, the
   share is destroyed and e is awarded 5 banknotes.
+assets: |
+  Share ownership:
+    
+    - Gaelan: 4
+    - Warrigal: 3
+
+  No other assets defined by this contract exist.
+notes: |
+  Gaelan is the President. The IPO ends on May 30, 2020 at 23:13 UTC.
+history:
+  - date: 2020-03-01 15:13:00.00 -8
+    event: Warrigal created
+  - date: 2020-03-01 15:13:00.00 -8
+    event: Warrigal purchased 3 shares and became president
+  - date: 2020-03-02 16:14:00.00 -8
+    event: Warrigal amended($) as only party
+  - date: 2020-03-02 17:50:00.00 -8
+    event: Gaelan joined, purchased 3 shares and became president
