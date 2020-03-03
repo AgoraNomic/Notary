@@ -36,7 +36,7 @@ text: |
 
   While there is an Active Supermaster, Cuddlebeam cannot perform actions
   unless someone acts on their behalf to perform them.
-state: |
+notes: |
   twg is the Supermaster, and is Active. E will cease to be a party to
   the contract on May 29, 2020 at 21:33 UTC.
 history:
