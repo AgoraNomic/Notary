@@ -4,28 +4,27 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup Ruby for use with actions
-      uses: actions/setup-ruby@v1.0.0
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Install gems
-      run: bundle install --deployment
-    - name: Build text report
-      run: |
-        mkdir out
-        bundle exec erb report.erb > out/report.txt
-    - name: Build HTML report
-      run: bundle exec erb web.html.erb > out/index.html
-    - name: Deploy
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v1
-      with:
-        target_branch: gh-pages
-        build_dir: out
-      env:
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+      - uses: actions/checkout@v2
+      - name: Setup Ruby for use with actions
+        uses: actions/setup-ruby@v1.0.0
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Install gems
+        run: bundle install --deployment
+      - name: Build text report
+        run: |
+          mkdir out
+          bundle exec ruby report.erb > out/report.txt
+      - name: Build HTML report
+        run: bundle exec erb web.html.erb > out/index.html
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: out
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
