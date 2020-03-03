@@ -1,0 +1,322 @@
+NOTARY'S REPORT OF MARCH 03 2020
+
+An up-to-date version of this report is available online at
+https://agoranomic.org/Notary/.
+
+There are 3 non-invisible contracts.
+
+=============================== CONTRACT ===============================
+|Gaelan's Really Bad At Sending Things To The Public Forum       rev. 0|
+|PARTIES: Gaelan, twg, Warrigal, Falsifian                             |
+========================================================================
+Any person may become a party of this contract to act on Gaelan’s behalf
+as described below.
+
+Any person may act on Gaelan’s behalf to perform a series of actions,
+subject to the following conditions:
+
+* Gaelan attempted to perform those exact actions (verbatim) in a
+  message to a discussion forum
+* The message to the discussion forum occurred within the past 24 hours
+* Gaelan's message was clearly an attempt to perform actions by sending
+  a message to a public forum (and, specifically, it was not labelled as
+  a draft of a later public action, such as a “proto” proposal)
+* No actions have been performed by Gaelan, or on eir behalf, after
+  the message to the discussion forum
+
+Gaelan may terminate this contract at any time, by announcement.
+------------------------------------------------------------------------
+History:
+Jan 08 2020 16:38: twg created (see CFJ 3791)
+Jan 24 2020 01:58: Warrigal joined
+Mar 01 2020 06:11: Falsifian joined
+========================================================================
+
+=============================== CONTRACT ===============================
+|The Dragon Corporation                                          rev. 1|
+|PARTIES: Warrigal                                                     |
+========================================================================
+## Bylaw 1: Definition
+
+This contract is named "the Dragon Corporation". The purpose of the
+Dragon Corporation is to earn as much money as possible for its
+shareholders.
+
+All other provisions of this contract notwithstanding, this contract
+does not permit any entity to act on behalf of any other entity.
+
+Shares of Dragon stock (also known as "shares of DRGN", or, in this
+contract, "shares") are a currency whose purpose is to represent
+ownership of the Dragon Corporation. An entity which owns at least one
+share is known as a shareholder.
+
+If, at any time, the Dragon Corporation or the Lost and Found Department
+owns any shares, then those shares are destroyed.
+
+Any person CAN, by announcement, become a party to this contract or
+cease to be a party to this contract. A shareholder who is a party to
+this contract is known as a member.
+
+Wherever this contract states that an entity becomes a party to this
+contract or ceases to be a party to this contract, all parties to this
+contract are considered to consent to this change.
+
+## Bylaw 2: Proposals
+
+Any member CAN, by announcement, submit a Corporate Proposal. A
+Corporate Proposal must have exactly one of the types defined by this
+contract. Thereafter, any member CAN vote FOR or AGAINST that proposal
+by announcement, or retract such a vote, which causes the vote to become
+null and void. Whenever a member votes, all of eir previous votes on the
+same proposal are implicitly retracted.
+
+If a Corporate Proposal was submitted more than 7 but fewer than 21 days
+ago, and the proposal has approval (as defined in other bylaws), and the
+proposal has not been applied, then any member CAN, by announcement,
+apply the proposal, which has effects as defined in other bylaws.
+
+Members SHALL NOT submit, vote for, or apply proposals that are
+egregiously unfair to other shareholders (such as a proposal which takes
+or revokes shares from minority shareholders without just compensation).
+
+## Bylaw 3: Amendment Proposals
+
+An Amendment Proposal is a type of Corporate Proposal. An Amendment
+Proposal has approval if at least one member has voted FOR it, and the
+number of shares owned by members who have voted FOR it is at least 2
+times the number of shares owned by members who have voted AGAINST it.
+
+When an Amendment Proposal is applied, the following occur:
+
+1. Each party to this contract who has not consented to the application
+of the proposal ceases to be a party to this contract. A party who has
+voted FOR a proposal consents to the application of that proposal,
+unless e has publicly stated otherwise at or after the time at which e
+voted FOR it.
+
+2. This contract is modified as described in the proposal.
+
+However, the application of an Amendment Proposal is INEFFECTIVE unless,
+in the same message, the entity who applies the proposal also publishes
+a text which is labeled as being the text of this contract after the
+application. E SHOULD, at that point, publish intent to ratify that text
+without objection.
+
+## Bylaw 4: Ordinary Proposals
+
+An Ordinary Proposal is a type of Corporate Proposal. An Ordinary
+Proposal has approval if the number of shares owned by members voting
+FOR it is greater than the number of shares owned by members voting
+AGAINST it.
+
+When an Ordinary Proposal is applied, assets are created, destroyed,
+and/or transferred as described in the proposal; and entities may
+create, destroy, and/or transfer assets as permitted in the proposal.
+Such permission expires 30 days after the proposal is applied.
+
+After an Ordinary Proposal is applied, the person who applied it SHOULD
+publish a description of its effects in a timely fashion, including all
+balances of assets defined by this contract which were affected by the
+proposal.
+
+## Bylaw 5: Bonds and Banknotes
+
+Perpetual Dragon bonds (hereinafter "bonds") are a currency. Banknotes
+are a currency.
+
+At the beginning of each Agoran quarter, each entity is awarded a number
+of banknotes equal to the number of bonds that e owns.
+
+If an entity owns a banknote, e CAN redeem the banknote by transferring
+1 coin from the Dragon Corporation to emself; the banknote is then
+destroyed.
+
+## Bylaw 6: Recordkeeping
+
+If a party to this contract owns more shares than any other party to
+this contract, then that party becomes the President of the Dragon
+Corporation, if e is not already the President. The former President
+SHALL publicly inform the new President of this event in a timely
+fashion.
+
+The President is the recordkeepor of all assets defined by this
+contract, except those for which this contract specifies a different
+recordkeepor.
+
+## Bylaw 7: IPO
+
+Within 90 days after this contract is created, any entity CAN pay a
+fee of 10 coins or 10 banknotes to the Dragon Corporation to buy a
+share. When e does this, e is awarded 1 share.
+
+Within 90 days after this contract is created, any entity who owns at
+least 1 share may sell the share by announcement. When e does this, the
+share is destroyed and e is awarded 5 banknotes.
+------------------------------------------------------------------------
+Asset ownership (self-ratifying if I am the recordkeepor):
+Share ownership:
+  
+  - Gaelan: 4
+  - Warrigal: 3
+
+No other assets defined by this contract exist.
+------------------------------------------------------------------------
+Notes:
+Gaelan is the President. The IPO ends on May 30, 2020 at 23:13 UTC.
+------------------------------------------------------------------------
+History:
+Mar 01 2020 23:13: Warrigal created
+Mar 01 2020 23:13: Warrigal purchased 3 shares and became president
+Mar 03 2020 00:14: Warrigal amended(1) as only party
+Mar 03 2020 01:50: 
+  Gaelan joined, purchased 3 shares and became president
+========================================================================
+
+=============================== CONTRACT ===============================
+|🧟✨Chattelbeam✨🧟                                             rev. 2|
+|PARTIES: Cuddlebeam, twg                                              |
+========================================================================
+This contract only has up to two parties, one of the which is the
+Superzombie and the other is the Supermaster.
+
+A Player can become the Supermaster by announcement unless a Player
+already currently is the Supermaster.
+
+A Supermaster is either Active or Inactive, and they default to being
+Inactive.
+
+Cuddlebeam is a party to this contract, and is the Superzombie.
+
+An Active Supermaster can act on behalf of the Superzombie to perform
+any action on their behalf except for the following:
+
+  - enter a contract, pledge, or other type of agreement;
+  - initiate a Call for Judgement;
+  - grant consent;
+  - deregister.
+
+If a Supermaster has been Inactive for more than 7 days, that
+Supermaster ceases to be a party of this contract.
+
+A Supermaster becomes Active (and ceases to be Inactive) by Pledging
+the following:
+"I Pledge to cause Cuddlebeam to Win Agora. The "N" of this Pledge,
+for the purpose of its Class N Crime of Oathbreaking, is a
+googolplex, and its time window is 90 days.".
+
+A Supermaster that has been Active for more than 90 days ceases to be a
+party of this contract.
+
+While there is an Active Supermaster, Cuddlebeam cannot perform actions
+unless someone acts on their behalf to perform them.
+------------------------------------------------------------------------
+Notes:
+twg is the Supermaster, and is Active. E will cease to be a party to
+the contract on May 29, 2020 at 21:33 UTC.
+------------------------------------------------------------------------
+History:
+Feb 29 2020 18:15: Cuddlebeam created
+Feb 29 2020 18:26: twg joined and became Supermaster
+Feb 29 2020 19:29: Cuddlebeam amended(1) by mutual consent
+Feb 29 2020 21:33: twg became Active
+Mar 01 2020 13:20: twg amended(2) by mutual (implied) consent
+========================================================================
+
+There are 8 non-invisible pledges.
+================================ PLEDGE ================================
+|Alexis is Willing to Pay People Off for A Lime Ribbon           Alexis|
+|MADE: Jan 18 2020 17:04|WINDOW:  60dy|EXPIRES: Mar 18 2020 17:04|N:  2|
+========================================================================
+I pledge that if, within the time window of this pledge, I receive a
+Lime Ribbon, I will transfer one half of my coins to the player or 
+players whose proposals made me eligible, divided evenly rounded down,
+and I will not attempt to defeat this pledge by fraudulent transfer of
+coins.
+========================================================================
+
+================================ PLEDGE ================================
+|Warrigal Wants to Play Blackjack                              Warrigal|
+|MADE: Jan 26 2020 18:37|WINDOW:   1yr|EXPIRES: Jan 26 2021 18:37|N:  5|
+========================================================================
+I pledge, with N = 5, that for each player who gives me 2 coins as a
+bet within the next 3 days, I will deal that player a blackjack hand
+and resolve the bet according to the rules of blackjack.
+
+I will deal myself (as the dealer) only one hand, rather than one hand
+per player. If I ask you for your action and you fail to respond in a
+timely fashion, I will assume that you decline insurance or stand. If
+a card is to be dealt, I will deal it in a timely fashion, and if
+money is to be paid, I will pay it in a timely fashion. The time
+window of this pledge is 1 year.
+
+Infinite shoe; dealer hits soft 17; double after split permitted;
+double any two cards; re-split to 4 hands; re-splitting aces
+permitted; hitting split aces prohibited; no hole card; player loses
+only original bet against dealer blackjack; early surrender permitted;
+blackjack pays 3 to 2.
+========================================================================
+
+================================ PLEDGE ================================
+|Gaelan Is Bad at XSS                                            Gaelan|
+|MADE: Jan 31 2020 19:20|WINDOW:  60dy|EXPIRES: Mar 31 2020 19:20|N:  2|
+========================================================================
+I pledge to stop trying if this one doesn’t work.
+========================================================================
+
+================================ PLEDGE ================================
+|Gaelan Was a Bad Judge                                          Gaelan|
+|MADE: Feb 18 2020 22:52|WINDOW:  60dy|EXPIRES: Apr 18 2020 22:52|N:  2|
+========================================================================
+I pledge to be more timely with my future judgements.
+========================================================================
+
+================================ PLEDGE ================================
+|🧟✨Mastwg✨🧟                                                     twg|
+|MADE: Feb 29 2020 21:33|WINDOW:  90dy|EXPIRES: May 29 2020 21:33|N: *1|
+========================================================================
+I Pledge that I will cause Cuddlebeam to Win Agora within 90 days.
+The "N" of this Pledge, for the purpose of its Class N Crime of
+Oathbreaking is a googleplex.
+========================================================================
+
+================================ PLEDGE ================================
+|🧟✨Cuddlebribery✨🧟                                              twg|
+|MADE: Mar 01 2020 14:18|WINDOW:  60dy|EXPIRES: Apr 30 2020 14:18|N:  6|
+========================================================================
+I pledge to give (or grant, or otherwise enable ownership of) 600
+coins to each person who votes to endorse me in the ongoing Prime
+Minister election (and does not subsequently withdraw or change
+that vote). The time window of this pledge is 60 days and violating
+it is a Class 6 Crime.
+========================================================================
+
+================================ PLEDGE ================================
+|🧟✨Zombeam✨🧟                                             Cuddlebeam|
+|MADE: Mar 02 2020 17:46|WINDOW:    *2|EXPIRES: May 29 2020 21:33|N: 10|
+========================================================================
+I pledge to not perform actions (while acting as myself, this doesn’t
+affect me when twg is acting on my behalf) which have a clear intent to
+be part of the usual gameplay of Agora nomic, without twg’s approval to
+do them, as long as they are my Supermaster. This does not include
+participating in commentary of the game, I can still communicate opinion
+and such freely. This has a time window equal to the remaining time twg 
+has as my Supermaster. The N for this Pledge’s Oathbreaking Crime is 10.
+========================================================================
+
+================================ PLEDGE ================================
+|R. Lee Keeps Top-Posting                                        R. Lee|
+|MADE: Mar 03 2020 01:21|WINDOW:    *3|EXPIRES:                *4|N:  2|
+========================================================================
+Sorry, I pledge for the time period of 1 million years to make no more
+than 5 breaches of the following rule.
+R. Lee shall append eir text at the bottom of the reply chain
+========================================================================
+
+*1: one googleplex
+*2: 2mo 27dy 3hr 47mn
+*3: 1000000yr
+*4: Mar 03 1002020 01:21
+
+The transitional period can end on or after April 27, 2020. At that
+point, any invisible contracts or pledges (i.e. those not listed above)
+will be destroyed.
